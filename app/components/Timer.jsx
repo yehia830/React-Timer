@@ -46,7 +46,9 @@ var Timer = React.createClass({
   render: function() {
     var {count, countdownStatus} = this.state; //2nd step being able to use them as yours, 3rd put them in div controls and clock
     return(
-      <div><Clock totalSeconds={count}/>
+      <div>
+        <h1 className="page-title">Timer</h1>
+        <Clock totalSeconds={count}/>
       <Controls countdownStatus={countdownStatus} onStatusChange={this.handleStatusChange}/>
       </div>
     )

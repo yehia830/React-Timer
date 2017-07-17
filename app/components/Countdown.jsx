@@ -10,6 +10,8 @@ var Countdown = React.createClass({
       countdownStatus: 'stopped'}; //maintain current status
   },
   componentDidUpdate: function (prevProps,prevState) { //specific method that houses previous props and states
+    console.log("!!!!!!!!!!!! CHANGING STATUS OF BUTTON IN componentDidUpdate!!!!!!!!");
+
     if(this.state.countdownStatus !== prevState.countdownStatus){  //check if new state same as previous one
       switch (this.state.countdownStatus) {
         case 'started':
@@ -47,9 +49,11 @@ var Countdown = React.createClass({
     });
   },
   handleStatusChange: function(newStatus) {
+    console.log("HANDLE STATUS CHANGE");
     this.setState({
       countdownStatus: newStatus
     })
+
   },
 
   render: function() {

@@ -24,7 +24,7 @@ describe('Countdown' , () => {
       },1001);
 
     })
-  })
+  });
   describe('handleSetCountdownunder0',() => {
     it('Countdown state does not go past 0 ', (done) => {
       var countdown = TestUtils.renderIntoDocument(<Countdown/>);

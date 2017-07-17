@@ -20,5 +20,5 @@ var CountdownForm = React.createClass({
       </div>
     )
   }
-})
+});
 module.exports = CountdownForm;

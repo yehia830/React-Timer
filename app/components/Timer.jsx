@@ -6,6 +6,6 @@ var Timer = () => {
       <h1>Timer.jsx</h1>
     </div>
   )
-}
+};
 
 module.exports = Timer;

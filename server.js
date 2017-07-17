@@ -10,7 +10,7 @@ app.use(function (req,res,next) {
   }else {
     next();
   }
-})
+});
 
 
 app.use(express.static('public'));

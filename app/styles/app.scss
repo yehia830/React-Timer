@@ -1,7 +1,18 @@
 @import "base/variables";
+
+//foundation
+@import "base/foundation-settings";
+@import "foundation";
+@include foundation-everything;
+
+//comp
 @import "components/nav";
 @import "components/clock";
 @import "components/controls";
+
+
+
+
 .page-title{
   text-align:center;
 }
